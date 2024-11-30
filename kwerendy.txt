@@ -1,0 +1,4 @@
+kwerenda1:SELECT DISTINCT Data, Godzina FROM rezerwacje;
+kwerenda2:SELECT Rzad, Miejsce FROM rezerwacje WHERE Data = '2022-08-09' AND Godzina = '18:00';
+kwerenda3:SELECT COUNT(Rzad) liczba_zajentych_miejsc FROM rezerwacje WHERE Data = '2022-08-09' AND Godzina = '18:00';
+kwerenda4:SELECT Rzad, Miejsce, Data, Godzina FROM rezerwacje JOIN kasjerzy ON rezerwacje.Id_kasjera = kasjerzy.id WHERE kasjerzy.Nazwisko = 'Bednarski' AND kasjerzy.Imie = 'Jan';
